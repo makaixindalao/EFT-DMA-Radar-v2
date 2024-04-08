@@ -414,19 +414,24 @@ namespace eft_dma_radar
 
                     this.GroupID = this.GetObservedPlayerGroupID();
                     this.HealthController = Memory.ReadPtrChain(playerBase, new uint[] { 0x80, 0xF0 });
-
+                    // 判断Player种类
                     if ((playerSide == 1 || playerSide == 2) && !playerIsAI) {
+                        // PMC
                         this.IsPmc = true;
                         this.Type = (playerSide == 1 ? PlayerType.USEC : PlayerType.BEAR);
                         //this.KDA = KDManager.GetKD(this.AccountID).Result;
                     } else if (playerSide == 4 && !playerIsAI) {
+                        // 玩家SCAV
                         this.Type = PlayerType.PScav;
                     } else if (playerSide == 4 && playerIsAI) {
                         if (Helpers.NameTranslations.ContainsValue(this.Name)) {
+                            // BOSS
                             this.Type = PlayerType.AIBoss;
                         } else if (Helpers.RaiderGuardRogueNames.Contains(this.Name)) {
+                            // 美军
                             this.Type = PlayerType.AIRaider;
                         } else {
+                            // SCAV
                             this.Type = PlayerType.AIScav;
                         }
                     }

@@ -1,0 +1,49 @@
+{
+  "version": 2,
+  "dgSpecHash": "cphYaaQbDNUPTrlKWxjtGVNxoAuyu9JQItZNLk5K2WJlzYOWEPll+efqKJ6fLnznU5ajmKusWFM+tL0uY6Y7/A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\kx\\Desktop\\share\\EFT-DMA-Radar-v2\\eft-dma-radar.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kx\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
+    "C:\\Users\\kx\\.nuget\\packages\\microsoft.win32.systemevents\\4.5.0\\microsoft.win32.systemevents.4.5.0.nupkg.sha512",
+    "C:\\Users\\kx\\.nuget\\packages\\opentk\\3.1.0\\opentk.3.1.0.nupkg.sha512",
+    "C:\\Users\\kx\\.nuget\\packages\\opentk.glcontrol\\3.1.0\\opentk.glcontrol.3.1.0.nupkg.sha512",
+    "C:\\Users\\kx\\.nuget\\packages\\skiasharp\\2.80.3\\skiasharp.2.80.3.nupkg.sha512",
+    "C:\\Users\\kx\\.nuget\\packages\\skiasharp.views.desktop.common\\2.80.3\\skiasharp.views.desktop.common.2.80.3.nupkg.sha512",
+    "C:\\Users\\kx\\.nuget\\packages\\skiasharp.views.windowsforms\\2.80.3\\skiasharp.views.windowsforms.2.80.3.nupkg.sha512",
+    "C:\\Users\\kx\\.nuget\\packages\\system.drawing.common\\4.5.1\\system.drawing.common.4.5.1.nupkg.sha512",
+    "C:\\Users\\kx\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "包 \"SkiaSharp\" 2.80.3 具有已知的 高 严重性漏洞，https://github.com/advisories/GHSA-j7hp-h8jx-5ppr",
+      "libraryId": "SkiaSharp",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "已使用“.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1”而不是项目目标框架“net6.0-windows7.0”还原包“OpenTK 3.1.0”。此包可能与项目不完全兼容。",
+      "libraryId": "OpenTK",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "已使用“.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1”而不是项目目标框架“net6.0-windows7.0”还原包“OpenTK.GLControl 3.1.0”。此包可能与项目不完全兼容。",
+      "libraryId": "OpenTK.GLControl",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    }
+  ]
+}
